@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "cypress": "^13.14.2",
+    "express": "^4.19.2",
+    "minimist": "^1.2.8",
+    "start-server-and-test": "^2.0.7"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:record": "cypress run --record",
+    "dev": "start-test 7078 cypress:open",
+    "start": "node server.js --port 7078",
+    "test:ci": "start-test 7078 cypress:run",
+    "test:ci:record": "start-test 7078 cypress:run:record"
+  }
+}
